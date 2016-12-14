@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use SDSLabs\Quark\Database\Seeds\DatabaseSeeder as QuarkSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(QuarkSeeder::class);
     }
 }
