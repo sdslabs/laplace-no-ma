@@ -167,7 +167,7 @@ return [
          * Package Service Providers...
          */
 
-        //
+        SDSLabs\Quark\QuarkServiceProvider::class,
 
         /*
          * Application Service Providers...
