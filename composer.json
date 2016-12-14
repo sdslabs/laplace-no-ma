@@ -6,7 +6,9 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
-        "laravel/framework": "5.3.*"
+        "laravel/framework": "5.3.*",
+        "sdslabs/quark": "dev-laravel-package",
+        "sdslabs/falcon": "dev-composer-pkg"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -15,6 +17,18 @@
         "symfony/css-selector": "3.1.*",
         "symfony/dom-crawler": "3.1.*"
     },
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "git@github.com:sdslabs/quark",
+        "no-api": true
+      },
+      {
+        "type": "vcs",
+        "url": "git@github.com:sdslabs/falcon",
+        "no-api": true
+      }
+    ],
     "autoload": {
         "classmap": [
             "database"
